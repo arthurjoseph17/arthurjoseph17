@@ -77,7 +77,9 @@ Red: Failed Authentications
 
 📷 Screenshots:
 
-
+![Workbook JSON Config](../images/entra-auth-1.png)  
+![Log Analytics Query and Results](../images/entra-auth-3.png)  
+![Final Workbook Visualization](../images/entra-auth-4.png) 
 
 
 
