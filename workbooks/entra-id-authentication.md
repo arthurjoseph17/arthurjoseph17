@@ -57,6 +57,7 @@ SigninLogs
     Country, 
     LoginCount, 
     friendly_label = strcat(Identity, " - ", City, ", ", Country)
+```
 
 🌍 Visualization
 
