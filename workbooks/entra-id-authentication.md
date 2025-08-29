@@ -36,8 +36,11 @@ SigninLogs
     Country, 
     LoginCount, 
     friendly_label = strcat(Identity, " - ", City, ", ", Country)
+```
 
 ❌ Failed Authentications
+
+```
 SigninLogs
 | where ResultType != 0
 | summarize LoginCount = count() by 
