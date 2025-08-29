@@ -2,6 +2,8 @@
 
 This workbook leverages **Microsoft Sentinel** and **Log Analytics** to visualize successful and failed Entra ID (Azure AD) authentication attempts across the globe. It allows security teams to track where user sign-ins are occurring, measure authentication volumes, and quickly identify unusual access patterns or potential compromise.
 
+![Final Workbook Visualization](../images/Entra-ID-Auth-4.png) 
+
 ---
 
 ## 📖 Description
@@ -79,7 +81,7 @@ Red: Failed Authentications
 
 ![Workbook JSON Config](../images/Entra-ID-Auth-1.png)  
 ![Log Analytics Query and Results](../images/Entra-ID-Auth-3.png)  
-![Final Workbook Visualization](../images/Entra-ID-Auth-4.png) 
+
 
 
 
