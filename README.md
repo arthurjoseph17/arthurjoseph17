@@ -17,7 +17,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 
 ---
 
-## 📊 🔍 Workbooks
+## 📊 🔍 Azure Sentinel Workbooks
 
 - **[Entra ID (Azure) Authentication Success/Failure](workbooks/entra-id-authentication.md)**
 
