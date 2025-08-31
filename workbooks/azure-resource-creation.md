@@ -2,6 +2,9 @@
 
 This workbook uses **Microsoft Sentinel / Log Analytics** to map where **Azure resource creation** is occurring worldwide. It filters successful *WRITE* operations from **AzureActivity**, enriches caller IPs with a GeoIP watchlist, and plots the results on a map so you can quickly spot high-volume creators, unusual regions, and potential misuse.
 
+![Azure Resource Creation Map](https://raw.githubusercontent.com/arthurjoseph17/arthurjoseph17/main/images/azure-resource-creation-1.png)  
+
+
 ---
 
 ## 📖 Description
@@ -60,6 +63,8 @@ Bubble color: Heatmap by ResouceCreationCount (greenRed palette)
 Label: friendly_label (<alias> - <city>, <country>)
 
 📷 Screenshots
+
+![Azure Resource Creation JSON Config](https://raw.githubusercontent.com/arthurjoseph17/arthurjoseph17/main/images/azure-resource-creation-2.png)
 
 ⚡ Use Cases
 
