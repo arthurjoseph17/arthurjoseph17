@@ -1,6 +1,6 @@
 # VM Authentication Failures Workbook
 
-This workbook uses **Microsoft Sentinel / Log Analytics** to visualize failed logon attempts to **virtual machines (VMs)** across the globe. By correlating device logon events with geolocation enrichment from a **GeoIP watchlist**, it helps security teams quickly identify patterns of brute force activity, unauthorized access attempts, and hotspots of malicious traffic.
+This workbook visualizes **failed VM logons** across the globe using **Microsoft Sentinel / Log Analytics**. It enriches `DeviceLogonEvents` with a GeoIP watchlist and plots **where** failures originate, helping you spot brute-force hotspots, noisy sources, and unusual geographies at a glance.
 
 ![VM Authentication Failures JSON Config](../images/vm-authentication-failures-2.png)  
 
@@ -8,48 +8,45 @@ This workbook uses **Microsoft Sentinel / Log Analytics** to visualize failed lo
 
 ## 📖 Description
 
-- **Signal:** `DeviceLogonEvents`  
-- **Scope:** Failed VM login attempts (`ActionType == "LogonFailed"`)  
-- **Where:** IPv4 caller IPs joined to GeoIP watchlist for country/city attribution  
-- **Window:** Last 30 days (adjustable in the workbook time picker)  
-
-The visualization projects failed authentication counts on a world map, where bubble size and color intensity represent the **volume of login failures** from a given region.
+- **Signal:** `DeviceLogonEvents`
+- **Scope:** `ActionType == "LogonFailed"`
+- **Enrichment:** IPv4 → Geo (city/country/lat/long) via a watchlist named **`geoip`**
+- **Window:** Last 30 days (set by workbook time picker)
 
 ---
 
 ## 🔎 KQL Query
 
+> **Prereq:** A watchlist named **`geoip`** with IPv4 networks and geo columns  
+> (e.g., `network`, `cityname`, `countryname`, `latitude`, `longitude`).
+
 ```kql
 let GeoIPDB_FULL = _GetWatchlist("geoip");
 DeviceLogonEvents
 | where ActionType == "LogonFailed"
-| summarize LoginAttempts = count() by
-    DeviceName,
-    AccountName,
-    Country = tostring(RemoteIPCountry),
-    Latitude,
-    Longitude
-| project
-    DeviceName,
-    AccountName,
-    Country,
-    Latitude,
-    Longitude,
-    LoginAttempts,
-    friendly_location = strcat(AccountName, " - ", Country)
+| order by TimeGenerated desc
+| evaluate ipv4_lookup(GeoIPDB_FULL, RemoteIP, network)
+| summarize
+    LoginAttempts = count()
+  by
+    RemoteIP,
+    City = cityname,
+    Country = countryname,
+    friendly_location = strcat(cityname, " (", countryname, ")"),
+    Latitude = latitude,
+    Longitude = longitude
 ```
-
 🌍 Visualization
 
 Type: Map (Lat/Long)
 
 Location fields: Latitude, Longitude
 
-Bubble size: LoginAttempts (count)
+Bubble size: LoginAttempts (Count)
 
-Bubble color: Heatmap (green → red) for density/severity
+Bubble color: Heatmap (greenRed) by LoginAttempts
 
-Label: friendly_location (<account> - <country>)
+Label: friendly_location (e.g., Taipei (Taiwan))
 
 📷 Screenshots
 
@@ -58,20 +55,18 @@ Label: friendly_location (<account> - <country>)
 
 ⚡ Use Cases
 
-Detecting brute force login attempts from specific geographies.
+Detect brute-force sources and geographies with high failure volume
 
-Identifying top targeted accounts or devices by failed attempts.
+Identify noisy IPs to block or rate-limit at the edge
 
-Spotting suspicious login failures from regions outside normal business operations.
+Compare failure spikes to maintenance windows or policy changes
 
-Supporting incident response by providing quick visual context of where attacks originate.
+Pivot from a hotspot to RemoteIP for deeper IR triage
 
 🧩 Tips
 
-Add filters for DeviceName or AccountType to drill into high-value systems.
+Add filters for DeviceName, AccountName, or ActionType variants to drill in
 
-Pair this workbook with alerts on repeated failures to proactively flag attacks.
+Pair with a successful logon workbook to check if failures led to compromise
 
-Cross-reference with successful logins to see if failures led to eventual compromise.
-
-Consider enriching further with threat intel feeds for known malicious IP ranges.
+Feed known-bad IP ranges into the geoip watchlist or a companion TI table
