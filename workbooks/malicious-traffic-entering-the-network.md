@@ -2,6 +2,8 @@
 
 This workbook visualizes **malicious inbound flows** detected by Azure’s flow analytics and maps the **source locations** worldwide. It enriches flow sources with a GeoIP watchlist and projects them on a heat-colored bubble map so you can rapidly triage hotspots, noisy IPs, and suspect regions.
 
+![Malicious Traffic JSON Config](../images/malicious-traffic-entering-the-network-2.png)
+
 ---
 
 ## 📖 Description
@@ -50,6 +52,7 @@ MaliciousFlows
     city = cityname,
     country = countryname,
     friendly_location = strcat(cityname, " (", countryname, ")")
+```
 
 
 🌍 Visualization
@@ -66,7 +69,7 @@ Label: friendly_location (e.g., Irwin (United States))
 
 📷 Screenshots
 
-
+![Malicious Traffic Map](../images/malicious-traffic-entering-the-network-1.png)  
 
 
 ⚡ Use Cases
