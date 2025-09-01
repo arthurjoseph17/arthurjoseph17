@@ -2,7 +2,7 @@
 
 This workbook uses **Microsoft Sentinel / Log Analytics** to visualize failed logon attempts to **virtual machines (VMs)** across the globe. By correlating device logon events with geolocation enrichment from a **GeoIP watchlist**, it helps security teams quickly identify patterns of brute force activity, unauthorized access attempts, and hotspots of malicious traffic.
 
-![VM Authentication Failures JSON Config](images/vm-authentication-failures-2.png)
+![VM Authentication Failures JSON Config](images/vm-authentication-failures-2.png)  
 
 ---
 
@@ -53,7 +53,7 @@ Label: friendly_location (<account> - <country>)
 
 📷 Screenshots
 
-![VM Authentication Failures Map](images/vm-authentication-failures-1.png)  
+![VM Authentication Failures Map](images/vm-authentication-failures-1.png)   
 
 
 ⚡ Use Cases
