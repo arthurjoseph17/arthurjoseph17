@@ -22,6 +22,8 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Entra ID (Azure) Authentication Success/Failure](workbooks/entra-id-authentication.md)**
 - **[Azure Resource Creation – Geo Enrichment](workbooks/azure-resource-creation.md)**
 - **[VM Authentication Failures](workbooks/vm-authentication-failures.md)**
+- **[Malicious Traffic Entering the Network](workbooks/malicious-traffic-entering-the-network.md)**
+
 
 <hr/>
 
