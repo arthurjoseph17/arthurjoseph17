@@ -53,7 +53,7 @@ Label: friendly_location (<account> - <country>)
 
 📷 Screenshots
 
-![VM Authentication Failures Map](images/vm-authentication-failures-1.png)   
+![VM Authentication Failures Map](../images/vm-authentication-failures-1.png)   
 
 
 ⚡ Use Cases
