@@ -13,7 +13,7 @@ DeviceInfo
 | where IsInternetFacing == true
 | order by Timestamp desc
 ```
-Last internet-facing timestamp: 2025-09-03T07:50:17Z
+Last internet-facing timestamp: **2025-09-03T07:50:17Z**
 
 🚨 **Brute Force Attempts**
 
@@ -31,11 +31,11 @@ DeviceLogonEvents
 
 Several IP addresses attempted repeated logins
 
-Top 5 failing IPs: 80.94.95.54, 185.243.96.107, 20.244.24.56, 92.63.197.9, 52.149.13.96.
+**Top 5 failing IPs**: 80.94.95.54, 185.243.96.107, 20.244.24.56, 92.63.197.9, 52.149.13.96.
 
 None were able to successfully authenticate
 
-✅ Validation of Successes
+✅ **Validation of Successes**
 ```
 let RemoteIPsInQuestion = dynamic(["80.94.95.54","185.243.96.107", "20.244.24.56", "92.63.197.9", "52.149.13.96"]);
 DeviceLogonEvents
@@ -47,7 +47,7 @@ DeviceLogonEvents
 
 ![Successful Logons for labuser](../images/vm-internet-exposure-2.png) 
 
-Result: No successful logons from the malicious IPs
+**Result**: No successful logons from the malicious IPs
 
 
 🧑‍💻 Legitimate Account Logons
@@ -60,13 +60,13 @@ DeviceLogonEvents
 | summarize count()
 ```
 
-72 total successful logons by labuser in the last 30 days.
+**72 total successful logons** by labuser in the last 30 days.
 
 No failed logons for labuser, reducing likelihood of brute-force success.
 
 Review of all successful labuser logon IPs showed normal, expected locations.
 
-📊 Findings
+📊 **Findings**
 
 VM was internet-facing and targeted by multiple brute force attempts.
 
@@ -74,7 +74,7 @@ No evidence of successful unauthorized access.
 
 Legitimate account (labuser) activity was normal and consistent.
 
-🛡️ Mitigations Applied
+🛡️ **Mitigations Applied**
 
 Hardened the NSG: RDP restricted to specific endpoints, no public internet access.
 
@@ -83,7 +83,7 @@ Implemented account lockout policies.
 Enabled multi-factor authentication (MFA) for privileged accounts.
 
 
-🎯 Relevant MITRE ATT&CK TTPs
+🎯 **Relevant MITRE ATT&CK TTPs**
 
 T1190: Exploit Public-Facing Application
 
