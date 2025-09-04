@@ -12,8 +12,11 @@ DeviceInfo
 | where DeviceName == "vm-test-9-1-25"
 | where IsInternetFacing == true
 | order by Timestamp desc
+```
 
 🚨 Brute Force Attempts
+
+```
 DeviceLogonEvents
 | where DeviceName == "vm-test-9-1-25"
 | where LogonType has_any("Network", "Interactive", "RemoteInteractive", "Unlock")
@@ -21,6 +24,7 @@ DeviceLogonEvents
 | where isnotempty(RemoteIP)
 | summarize Attempts = count() by ActionType, RemoteIP, DeviceName
 | order by Attempts
+```
 
 ![Failed Logon Attempts](../images/vm-internet-exposure-1.png)  
 
@@ -31,25 +35,27 @@ Top 5 failing IPs: 80.94.95.54, 185.243.96.107, 20.244.24.56, 92.63.197.9, 52.14
 None were able to successfully authenticate
 
 ✅ Validation of Successes
+```
 let RemoteIPsInQuestion = dynamic(["80.94.95.54","185.243.96.107", "20.244.24.56", "92.63.197.9", "52.149.13.96"]);
 DeviceLogonEvents
 | where LogonType has_any("Network", "Interactive", "RemoteInteractive", "Unlock")
 | where ActionType == "LogonSuccess"
 | where RemoteIP has_any(RemoteIPsInQuestion)
-
+```
 Result: No successful logons from the malicious IPs
 
 
 ![Successful Logons for labuser](../images/vm-internet-exposure-2.png) 
 
 🧑‍💻 Legitimate Account Logons
+```
 DeviceLogonEvents
 | where DeviceName == "vm-test-9-1-25"
 | where LogonType == "Network"
 | where ActionType == "LogonSuccess"
 | where AccountName == "labuser"
 | summarize count()
-
+```
 
 72 total successful logons by labuser in the last 30 days.
 
