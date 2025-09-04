@@ -42,10 +42,12 @@ DeviceLogonEvents
 | where ActionType == "LogonSuccess"
 | where RemoteIP has_any(RemoteIPsInQuestion)
 ```
-Result: No successful logons from the malicious IPs
 
 
 ![Successful Logons for labuser](../images/vm-internet-exposure-2.png) 
+
+Result: No successful logons from the malicious IPs
+
 
 🧑‍💻 Legitimate Account Logons
 ```
