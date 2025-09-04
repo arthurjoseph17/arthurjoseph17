@@ -13,8 +13,9 @@ DeviceInfo
 | where IsInternetFacing == true
 | order by Timestamp desc
 ```
+Last internet-facing timestamp: 2025-09-03T07:50:17Z
 
-🚨 Brute Force Attempts
+🚨 **Brute Force Attempts**
 
 ```
 DeviceLogonEvents
