@@ -16,7 +16,7 @@ DeviceNetworkEvents
 | order by ConnectionCount
 ```
 
-image 1
+![Failed Connections Summary](../images/sudden-network-slowdown-1.png) 
 
 **Observation**: windows-target-1 was failing connections against itself and another host.
 
@@ -52,7 +52,7 @@ DeviceProcessEvents
 
 Script launched under **SYSTEM account** — not expected or admin-approved behavior.
 
-image 2
+![Port Scan Script](../images/sudden-network-slowdown-2.png)
 
 
 🛡️ Response Actions
