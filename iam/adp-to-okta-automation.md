@@ -56,22 +56,30 @@ Standardized access provisioning across departments.
 **Okta Group Rule Example**
 
 Automatically bundles call center users into the correct access group.
+
 ![Okta Group Rule](../images/adp-to-okta-automation-1.png)
+
 
 **Aquera Provisioning & Matching Configuration**
 
 Ensures users sync correctly from ADP to Okta.
+
 ![Aquera Matching](../images/adp-to-okta-automation-2.png)
+
 
 **Okta Assigned Applications**
 
 Applications automatically provisioned based on groups & roles.
+
 ![Assigned Applications](../images/adp-to-okta-automation-3.png)
+
 
 **Okta → Office 365 Provisioning**
 
 Lifecycle actions (create, update, deactivate) synced with Azure/Office 365.
+
 ![Okta to Office 365](../images/adp-to-okta-automation-4.png)
+
 
 **Attribute Mapping from ADP → Okta**
 
@@ -79,7 +87,10 @@ User attributes mapped and updated automatically from ADP into Okta.
 
 ![Okta Attribute Mapping](../images/adp-to-okta-automation-5.png)
 
+
 **Azure Entra ID User Sync**
 
 Resulting Azure user object with correct groups, licenses, and apps assigned.
+
+
 ![Azure User Sync](../images/adp-to-okta-automation-6.png)
