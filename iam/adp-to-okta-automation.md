@@ -53,6 +53,7 @@ Standardized access provisioning across departments.
 ```
 
 **📸 Screenshots**
+
 **Okta Group Rule Example**
 
 Automatically bundles call center users into the correct access group.
