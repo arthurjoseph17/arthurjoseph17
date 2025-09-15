@@ -50,6 +50,7 @@ Reduced IT workload by 40% (estimation based on tickets avoided).
 Improved security posture by ensuring immediate deprovisioning at termination.
 
 Standardized access provisioning across departments.
+```
 
 **📸 Screenshots**
 **Okta Group Rule Example**
