@@ -40,6 +40,7 @@ This pipeline ensures seamless **onboarding, access assignment, and offboarding*
 
 ```text
 ADP (HR System) → Aquera (Connector) → Okta (Provisioning + Groups + Apps) → Azure AD/Entra ID
+```
 
 🎯 Impact
 
