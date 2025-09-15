@@ -25,6 +25,10 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[VM Authentication Failures](workbooks/vm-authentication-failures.md)**
 - **[Malicious Traffic Entering the Network](workbooks/malicious-traffic-entering-the-network.md)**
 
+## 🔐 Identity & Access Management (IAM) Projects
+
+- **[Automated Onboarding & Offboarding Pipeline](iam/adp-to-okta-automation.md)**
+
 
 <hr/>
 
