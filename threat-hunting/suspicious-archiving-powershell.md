@@ -18,7 +18,7 @@ DeviceFileEvents
 From there, I pivoted to DeviceProcessEvents within the same time window to identify what process initiated the archiving. The analysis revealed a PowerShell script that silently installed 7-Zip and immediately used it to compress employee data into archives.
 
 
-![Zip File Creation Events](images/suspected-data-exfiltration-1.png)
+![Zip File Creation Events](../images/suspected-data-exfiltration-1.png)
 
 
 ```kql
@@ -34,7 +34,7 @@ DeviceProcessEvents
 Finally, I validated whether there was any sign of data exfiltration by pivoting to DeviceNetworkEvents during the same timeframe. No outbound network activity was detected, suggesting the activity may have been limited to internal staging rather than immediate exfiltration.
 
 
-![PowerShell & 7-Zip Process Execution](images/suspected-data-exfiltration-2.png
+![PowerShell & 7-Zip Process Execution](../images/suspected-data-exfiltration-2.png
 
 
 ```kql
