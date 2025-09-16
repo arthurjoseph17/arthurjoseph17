@@ -16,7 +16,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/joshmadakor0/threat-hunting-scenario-tor)**
 - **[Threat Hunting Scenario (Devices Accidently Exposed to the Internet)](threat-hunting/vm-internet-exposure.md)**
 - **[Threat Hunting Scenario (Sudden Network Slowdowns)](threat-hunting/sudden-network-slowdowns.md)**
-
+- **[Threat Hunting Scenario (Suspected Data Exfiltration)](threat-hunting/suspicious-archiving-powershell.md)**
 
 ## 📊 🔍 Azure Sentinel Workbooks
 
