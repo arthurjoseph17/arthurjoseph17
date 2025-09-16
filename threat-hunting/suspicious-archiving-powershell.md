@@ -34,7 +34,7 @@ DeviceProcessEvents
 Finally, I validated whether there was any sign of data exfiltration by pivoting to DeviceNetworkEvents during the same timeframe. No outbound network activity was detected, suggesting the activity may have been limited to internal staging rather than immediate exfiltration.
 
 
-![PowerShell & 7-Zip Process Execution](../images/suspected-data-exfiltration-2.png
+![PowerShell & 7-Zip Process Execution](../images/suspected-data-exfiltration-2.png)
 
 
 ```kql
