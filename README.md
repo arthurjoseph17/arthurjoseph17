@@ -18,12 +18,19 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Threat Hunting Scenario (Sudden Network Slowdowns)](threat-hunting/sudden-network-slowdowns.md)**
 - **[Threat Hunting Scenario (Suspected Data Exfiltration)](threat-hunting/suspicious-archiving-powershell.md)**
 
+
+## 🚨 Incident Response
+
+- **[Brute Force Attempts Against Azure VMs](incident-response/brute-force-azure-vms.md)**
+
+
 ## 📊 🔍 Azure Sentinel Workbooks
 
 - **[Entra ID (Azure) Authentication Success/Failure](workbooks/entra-id-authentication.md)**
 - **[Azure Resource Creation – Geo Enrichment](workbooks/azure-resource-creation.md)**
 - **[VM Authentication Failures](workbooks/vm-authentication-failures.md)**
 - **[Malicious Traffic Entering the Network](workbooks/malicious-traffic-entering-the-network.md)**
+
 
 ## 🔐 Identity & Access Management (IAM) Projects
 
