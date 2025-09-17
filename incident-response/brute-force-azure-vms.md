@@ -15,6 +15,15 @@ DeviceLogonEvents
 | where NumberOfFailures >= 50
 ```
 
+
+![Detection Query Results](../images/brute-forcing-incident-1.png)
+
+
+
+![Investigation Graph](../images/brute-forcing-incident-4.png)
+
+
+
 **Findings:**
 
 **VM**: keith-cyber-win
@@ -61,19 +70,23 @@ Proposed corporate policy to enforce this restriction across all VMs using Azure
 
 **📊 Screenshots & Evidence**
 
-**Detection in Sentinel Queries**:
-
 
 **Analytics Rule Configuration**:
+
+
+![Analytics Rule](../images/brute-forcing-incident-2.png)
 
 
 **Sentinel Active Rule**:
 
 
-**Incident Investigation Map**:
+![Sentinel Rule](../images/brute-forcing-incident-3.png)
 
 
 **Follow-up Verification Query**:
+
+
+![Verification Query](../images/brute-forcing-incident-5.png)
 
 
 **📌 MITRE ATT&CK Mapping**
