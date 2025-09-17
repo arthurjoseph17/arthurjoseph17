@@ -19,7 +19,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Threat Hunting Scenario (Suspected Data Exfiltration)](threat-hunting/suspicious-archiving-powershell.md)**
 
 
-## 🚨 Incident Responses
+## 🚨 Incident Response
 
 - **[Brute Force Attempts Against Azure VMs](incident-response/brute-force-azure-vms.md)**
 
