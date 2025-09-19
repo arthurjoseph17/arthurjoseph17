@@ -80,3 +80,12 @@ Apply sign-in risk evaluation with Identity Protection.
 Documented rule as medium-confidence, high-false-positive for tuning.
 
 Scheduled follow-up to review whether custom tuning is needed (e.g., excluding corporate VPN ranges).
+
+
+MITRE ATT&CK Framework Mapping
+
+TA0001 – Initial Access
+
+T1078 – Valid Accounts (potential credential misuse)
+
+T1078.004 – Cloud Accounts (Azure AD accounts at risk from anomalous login activity)
