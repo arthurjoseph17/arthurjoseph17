@@ -22,7 +22,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 ## 🚨 Incident Response
 
 - **[Brute Force Attempts Against Azure VMs](incident-response/brute-force-azure-vms.md)**
-
+- **[Suspicious PowerShell Web Requests](incident-response/powershell-suspicious-web-request.md)**
 
 ## 📊 🔍 Azure Sentinel Workbooks
 
