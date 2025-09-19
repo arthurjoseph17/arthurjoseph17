@@ -7,7 +7,7 @@ An incident titled **“kelsier - PowerShell Suspicious Web Request”** was tri
 Upon investigation, the following suspicious PowerShell commands were identified on device **6th-c9300**. The commands executed downloads of four separate scripts from a public GitHub repository:
 
 
-![PowerShell Suspicious Web Request Investigation](incident-response/images/powershell-suspicious-web-request-1.png)
+![PowerShell Suspicious Web Request Investigation](../images/powershell-suspicious-web-request-1.png)
 
 
 
@@ -43,12 +43,12 @@ DeviceProcessEvents
 ```
 
 
-![Sentinel Analytics Rule Setup](incident-response/images/powershell-suspicious-web-request-3.png)
+![Sentinel Analytics Rule Setup](../images/powershell-suspicious-web-request-3.png)
 
 
 
 
-![Process CommandLine Evidence](incident-response/images/powershell-suspicious-web-request-2.png)
+![Process CommandLine Evidence](../images/powershell-suspicious-web-request-2.png)
 
 
 
