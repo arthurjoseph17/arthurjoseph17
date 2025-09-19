@@ -23,7 +23,9 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 
 - **[Brute Force Attempts Against Azure VMs](incident-response/brute-force-azure-vms.md)**
 - **[Suspicious PowerShell Web Requests](incident-response/powershell-suspicious-web-request.md)**
+- **[Potential Impossible Travel](incident-response/potential-impossible-travel.md)**
 
+  
 ## 📊 🔍 Azure Sentinel Workbooks
 
 - **[Entra ID (Azure) Authentication Success/Failure](workbooks/entra-id-authentication.md)**
