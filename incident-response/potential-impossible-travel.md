@@ -82,10 +82,10 @@ Documented rule as medium-confidence, high-false-positive for tuning.
 Scheduled follow-up to review whether custom tuning is needed (e.g., excluding corporate VPN ranges).
 
 
-MITRE ATT&CK Framework Mapping
+**MITRE ATT&CK Framework Mapping**
 
-TA0001 – Initial Access
+**TA0001** – Initial Access
 
-T1078 – Valid Accounts (potential credential misuse)
+**T1078** – Valid Accounts (potential credential misuse)
 
-T1078.004 – Cloud Accounts (Azure AD accounts at risk from anomalous login activity)
+**T1078.004** – Cloud Accounts (Azure AD accounts at risk from anomalous login activity)
