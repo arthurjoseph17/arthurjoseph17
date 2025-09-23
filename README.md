@@ -25,6 +25,11 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Suspicious PowerShell Web Requests](incident-response/powershell-suspicious-web-request.md)**
 - **[Potential Impossible Travel](incident-response/potential-impossible-travel.md)**
 
+
+## 🔐 Identity & Access Management (IAM) Projects
+
+- **[Automated Onboarding & Offboarding Pipeline](iam/adp-to-okta-automation.md)**
+
   
 ## 📊 🔍 Azure Sentinel Workbooks
 
@@ -33,10 +38,6 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[VM Authentication Failures](workbooks/vm-authentication-failures.md)**
 - **[Malicious Traffic Entering the Network](workbooks/malicious-traffic-entering-the-network.md)**
 
-
-## 🔐 Identity & Access Management (IAM) Projects
-
-- **[Automated Onboarding & Offboarding Pipeline](iam/adp-to-okta-automation.md)**
 
 
 <hr/>
