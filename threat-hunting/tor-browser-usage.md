@@ -109,17 +109,17 @@ DeviceNetworkEvents
 
 **🗓️ Chronological Timeline**
 
-16:40:43 UTC → Initial hunting query shows activity linked to user jsfondi.
+**16:40:43 UTC** → Initial hunting query shows activity linked to user jsfondi.
 
-16:43:07 UTC → Silent execution of Tor installer.
+**16:43:07 UTC** → Silent execution of Tor installer.
 
-16:43:26–16:43:30 UTC → Tor-related files created on Desktop, tor.exe and firefox.exe spawned.
+**16:43:26–16:43:30 UTC** → Tor-related files created on Desktop, tor.exe and firefox.exe spawned.
 
-16:43:37–16:45:10 UTC → Repeated Tor process executions confirm active use.
+**16:43:37–16:45:10 UTC** → Repeated Tor process executions confirm active use.
 
-16:46:20–16:46:56 UTC → Network connections established to multiple Tor relay IPs.
+**16:46:20–16:46:56 UTC** → Network connections established to multiple Tor relay IPs.
 
-17:05:48 UTC → Creation of tor-shopping-list.txt, suggesting potential misuse of Tor for illicit activity
+**17:05:48 UTC** → Creation of tor-shopping-list.txt, suggesting potential misuse of Tor for illicit activity
 
 
 
