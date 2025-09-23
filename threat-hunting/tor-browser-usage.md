@@ -31,7 +31,7 @@ DeviceFileEvents
 
 
 
-⚙️ Process Execution
+**⚙️ Process Execution**
 
 Investigation into process execution revealed:
 
@@ -74,7 +74,7 @@ DeviceProcessEvents
 
 
 
-🌐 Network Activity
+**🌐 Network Activity**
 
 Evidence of Tor network usage was confirmed:
 
@@ -107,7 +107,7 @@ DeviceNetworkEvents
 
 
 
-🗓️ Chronological Timeline
+**🗓️ Chronological Timeline**
 
 16:40:43 UTC → Initial hunting query shows activity linked to user jsfondi.
 
@@ -126,7 +126,7 @@ DeviceNetworkEvents
 
 
 
-📌 Summary
+**📌 Summary**
 
 User jsfondi on device 6th-c9300:
 
@@ -141,7 +141,7 @@ Created a file named tor-shopping-list.txt, raising additional concerns.
 
 
 
-🛡️ Response Taken
+**🛡️ Response Taken**
 
 ✅ Confirmed Tor usage on endpoint 6th-c9300.
 
@@ -153,12 +153,12 @@ Created a file named tor-shopping-list.txt, raising additional concerns.
 
 
 
-🗺️ MITRE ATT&CK Mapping
+**🗺️ MITRE ATT&CK Mapping**
 
-T1059.001 – Command and Scripting Interpreter: PowerShell (silent installer execution)
+**T1059.001** – Command and Scripting Interpreter: PowerShell (silent installer execution)
 
-T1105 – Ingress Tool Transfer (download and installation of Tor)
+**T1105** – Ingress Tool Transfer (download and installation of Tor)
 
-T1071.001 – Application Layer Protocol: Web Protocols (Tor connections over ports 9001, 9150)
+**T1071.001** – Application Layer Protocol: Web Protocols (Tor connections over ports 9001, 9150)
 
-T1036 – Masquerading (Tor Browser processes appear as firefox.exe)
+**T1036** – Masquerading (Tor Browser processes appear as firefox.exe)
