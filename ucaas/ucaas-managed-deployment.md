@@ -152,15 +152,6 @@ Led a multi-phase UCaaS modernization and migration program spanning design, man
 
 ---
 
-## Visuals (placeholders — add screenshots as you collect them)
-- `![Program Timeline](images/ucaas_timeline.png)` — high-level Gantt by phase  
-- `![Voice Architecture](images/voice_architecture_after.png)` — post-migration logical diagram  
-- `![Monitoring & Alerts](images/monitoring_dashboard.png)` — redacted dashboard view  
-- `![DR Playbook Excerpt](images/dr_playbook.png)` — test matrix snapshot  
-- `![Change Control Packet](images/change_packet.png)` — redacted headers only
-
----
-
 ## Appendices (Optional)
 <details>
 <summary><strong>Representative Work Items (by Phase)</strong></summary>
