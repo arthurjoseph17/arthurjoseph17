@@ -42,7 +42,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 
 ## 📡 Unified Communications as a Service (UCaaS) Projects
 
-- **[UCaaS Modernization & Cloud Migration](ucaas/ucaas-managed-deployment/README.md)**
+- **[UCaaS Modernization & Cloud Migration](ucaas/ucaas-managed-deployment.md)**
 
 
 
