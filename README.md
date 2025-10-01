@@ -40,7 +40,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Automated Onboarding & Offboarding Pipeline](iam/adp-to-okta-automation.md)**
 
 
-  ## 📡 Unified Communications as a Service (UCaaS) Projects
+## 📡 Unified Communications as a Service (UCaaS) Projects
 
 - **[UCaaS Modernization & Cloud Migration](ucaas/ucaas-managed-deployment/README.md)**
 
