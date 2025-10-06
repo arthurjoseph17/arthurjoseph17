@@ -4,13 +4,6 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 
 ---
 
-## ⚠️ Vulnerability Management Projects
-
-- **[Vulnerability Management Program Implementation](https://github.com/joshcybertest/vulnerability-management-program)**
-- **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
-
----
-
 ## 🚨 Threat Hunting and Security Operations
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](threat-hunting/tor-browser-usage.md)**
@@ -32,6 +25,13 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 - **[Azure Resource Creation – Geo Enrichment](workbooks/azure-resource-creation.md)**
 - **[VM Authentication Failures](workbooks/vm-authentication-failures.md)**
 - **[Malicious Traffic Entering the Network](workbooks/malicious-traffic-entering-the-network.md)**
+
+
+
+## ⚠️ Vulnerability Management Projects
+
+- **[Vulnerability Management Program Implementation](https://github.com/arthurjoseph17/vulnerability-management-program)**
+- **[Programmatic Vulnerability Remediations (PowerShell and BASH)](https://github.com/joshcybertest/programmatic-vulnerability-remediations)**
 
 
 
