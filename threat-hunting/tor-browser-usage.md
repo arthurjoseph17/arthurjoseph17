@@ -1,5 +1,7 @@
 # 🕵️ Threat Hunting Scenario: Tor Browser Usage
 
+<img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
+
 ## 🔎 Detection and Analysis  
 
 While performing proactive hunting in Microsoft Defender for Endpoint (MDE), activity related to the **Tor Browser** was detected on device **6th-c9300**, linked to user **jsfondi**. Tor usage in a corporate environment can indicate attempts to bypass security controls, mask browsing activity, or engage in policy-violating behavior.
